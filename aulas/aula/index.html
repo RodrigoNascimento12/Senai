@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combate à Violência Contra as Mulheres</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f2ff;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: #9b59b6;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .header-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            font-style: italic;
+        }
+        
+        nav {
+            background-color: #8e44ad;
+            padding: 15px 0;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        nav li {
+            margin: 0 15px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #e8daef;
+        }
+        
+        main {
+            padding: 40px 0;
+        }
+        
+        .blog-intro {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .article-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .article-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .article-content {
+            padding: 20px;
+        }
+        
+        .article-content h3 {
+            margin-top: 0;
+            color: #8e44ad;
+        }
+        
+        .read-more {
+            display: inline-block;
+            background-color: #9b59b6;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+        
+        .read-more:hover {
+            background-color: #8e44ad;
+        }
+        
+        .highlighted-article {
+            grid-column: span 2;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .highlighted-article .article-image {
+            flex: 1;
+            height: auto;
+        }
+        
+        .highlighted-article .article-content {
+            flex: 1;
+        }
+        
+        footer {
+            background-color: #8e44ad;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+            padding: 0 15px;
+        }
+        
+        .footer-section h3 {
+            border-bottom: 2px solid rgba(255,255,255,0.2);
+            padding-bottom: 10px;
+        }
+        
+        .emergency-contact {
+            background-color: #6c3483;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        
+        .emergency-contact p {
+            font-size: 1.3rem;
+            margin: 5px 0;
+        }
+        
+        .social-icons {
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .highlighted-article {
+                grid-column: span 1;
+                flex-direction: column;
+            }
+            
+            .highlighted-article .article-image {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Mulheres Sem Medo</h1>
+            <p>Informação, apoio e empoderamento contra a violência de gênero</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#artigos">Artigos</a></li>
+                <li><a href="#ajuda">Buscar Ajuda</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="container">
+            <section class="blog-intro" id="inicio">
+                <h2>Combatendo a Violência Contra a Mulher em 2025</h2>
+                <p>A violência contra a mulher continua sendo uma das questões sociais mais urgentes e persistentes no Brasil e no mundo. Em pleno 2025, mesmo com avanços significativos na legislação e conscientização, milhares de mulheres ainda enfrentam diariamente situações de abuso e violação de seus direitos fundamentais. Este fenômeno complexo atravessa todas as classes sociais, etnias e gerações, demonstrando que a violência contra a mulher não é um problema isolado, mas sim uma manifestação profunda da desigualdade de gênero enraizada em nossa sociedade.</p>
+                <p>Compreender o que é violência contra a mulher significa reconhecer que este problema vai muito além das agressões físicas visíveis. Trata-se de um conjunto de comportamentos abusivos que incluem violência psicológica, sexual, patrimonial, moral, além da física, que tem como objetivo controlar, dominar e subjugar as mulheres, negando-lhes autonomia e dignidade.</p>
+                <p>Neste blog, compartilhamos informações, ferramentas e recursos para apoiar mulheres em situação de vulnerabilidade e conscientizar toda a sociedade sobre seu papel no combate à violência de gênero.</p>
+            </section>
+            
+            <section id="artigos">
+                <h2>Artigos em Destaque</h2>
+                <div class="articles-grid">
+                    <article class="article-card highlighted-article">
+                        <div class="article-image" style="background-image: url('/api/placeholder/600/400');"></div>
+                        <div class="article-content">
+                            <h3>O Que É Violência Contra a Mulher: Conceitos Fundamentais</h3>
+                            <p>A violência contra a mulher caracteriza-se por qualquer ato baseado no gênero que cause morte, dano ou sofrimento físico, sexual ou psicológico à mulher, tanto na esfera pública quanto na privada. Esta definição, adotada pela Convenção de Belém do Pará (1994), reconhece que a violência contra a mulher constitui uma violação dos direitos humanos e das liberdades fundamentais.</p>
+                            <p>Quando falamos sobre o conceito de violência contra a mulher, é importante entender que este fenômeno está intimamente ligado às relações desiguais de poder historicamente estabelecidas entre homens e mulheres.</p>
+                            <a href="#" class="read-more">Ler artigo completo</a>
+                        </div>
+                    </article>
+                    
+                    <article class="article-card">
+                        <div class="article-image" style="background-image: url('/api/placeholder/400/300');"></div>
+                        <div class="article-content">
+                            <h3>Os 7 Tipos de Agressão Contra a Mulher</h3>
+                            <p>Embora comumente se fale em cinco principais tipos de violência contra a mulher previstos na Lei Maria da Penha (física, psicológica, sexual, patrimonial e moral), especialistas identificam pelo menos sete tipos de agressão quando consideramos também a violência institucional e a violência virtual/digital.</p>
+                            <a href="#" class="read-more">Ler artigo completo</a>
+                        </div>
+                    </article>
+                    
+                    <article class="article-card">
+                        <div class="article-image" style="background-image: url('/api/placeholder/400/300');"></div>
+                        <div class="article-content">
+                            <h3>Violência Doméstica: O Inimigo Dentro de Casa</h3>
+                            <p>A violência doméstica representa uma das formas mais comuns e complexas de violência contra a mulher, caracterizada por ocorrer no ambiente familiar, geralmente perpetrada por alguém com quem a vítima mantém ou manteve relação íntima de afeto.</p>
+                            <a href="#" class="read-more">Ler artigo completo</a>
+                        </div>
+                    </article>
+                    
+                    <article class="article-card">
+                        <div class="article-image" style="background-image: url('/api/placeholder/400/300');"></div>
+                        <div class="article-content">
+                            <h3>Lei Maria da Penha: Instrumento de Proteção</h3>
+                            <p>A Lei Maria da Penha, oficialmente Lei nº 11.340/2006, representa um divisor de águas no combate à violência contra a mulher no Brasil. Seu nome homenageia Maria da Penha Maia Fernandes, biofarmacêutica que ficou paraplégica após sofrer duas tentativas de homicídio por parte de seu então marido.</p>
+                            <a href="#" class="read-more">Ler artigo completo</a>
+                        </div>
+                    </article>
+                    
+                    <article class="article-card">
+                        <div class="article-image" style="background-image: url('/api/placeholder/400/300');"></div>
+                        <div class="article-content">
+                            <h3>Como Denunciar Violência Contra a Mulher</h3>
+                            <p>Saber como denunciar violência contra a mulher é fundamental não apenas para as vítimas, mas para toda a sociedade. O Brasil dispõe de diversos canais de denúncia, cada um com suas especificidades, permitindo que a pessoa escolha o meio com o qual se sente mais confortável.</p>
+                            <a href="#" class="read-more">Ler artigo completo</a>
+                        </div>
+                    </article>
+                    
+                    <article class="article-card">
+                        <div class="article-image" style="background-image: url('/api/placeholder/400/300');"></div>
+                        <div class="article-content">
+                            <h3>Consequências da Violência Contra a Mulher</h3>
+                            <p>As consequências da violência contra a mulher vão muito além das marcas físicas visíveis, afetando profundamente todos os aspectos da vida da vítima e refletindo-se na sociedade como um todo. É fundamental compreender esses impactos em sua totalidade.</p>
+                            <a href="#" class="read-more">Ler artigo completo</a>
+                        </div>
+                    </article>
+                    
+                    <article class="article-card">
+                        <div class="article-image" style="background-image: url('/api/placeholder/400/300');"></div>
+                        <div class="article-content">
+                            <h3>Como Combater a Violência Contra a Mulher</h3>
+                            <p>O combate à violência contra a mulher exige ações em múltiplas frentes, envolvendo tanto iniciativas individuais quanto políticas públicas abrangentes. Cada pessoa, instituição e setor da sociedade tem um papel fundamental nesta luta.</p>
+                            <a href="#" class="read-more">Ler artigo completo</a>
+                        </div>
+                    </article>
+                    
+                    <article class="article-card highlighted-article">
+                        <div class="article-image" style="background-image: url('/api/placeholder/600/400');"></div>
+                        <div class="article-content">
+                            <h3>Feminicídio: A Forma Mais Extrema de Violência</h3>
+                            <p>O feminicídio é definido como o assassinato de mulheres em razão de seu gênero, representando a última etapa de um continuum de violência que inclui diversas formas de abuso e opressão. No Brasil, o feminicídio foi tipificado como circunstância qualificadora do crime de homicídio e incluído na lista de crimes hediondos pela Lei 13.104/2015.</p>
+                            <p>Os dados sobre feminicídio no Brasil são alarmantes. Segundo o Fórum Brasileiro de Segurança Pública, em 2023, registrou-se mais de 1.400 casos, com média de quatro mulheres assassinadas por dia em razão de seu gênero, sendo que cerca de 70% dos crimes ocorreram no ambiente doméstico, perpetrados por parceiros ou ex-parceiros das vítimas.</p>
+                            <a href="#" class="read-more">Ler artigo completo</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Canais de Ajuda</h3>
+                    <div class="emergency-contact">
+                        <p><strong>Ligue 180</strong></p>
+                        <p>Central de Atendimento à Mulher</p>
+                        <p>24 horas, todos os dias</p>
+                    </div>
+                    <p>Em casos de emergência, ligue 190 (Polícia Militar)</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li><a href="#">Delegacias da Mulher</a></li>
+                        <li><a href="#">Rede de Apoio</a></li>
+                        <li><a href="#">Direitos da Mulher</a></li>
+                        <li><a href="#">Medidas Protetivas</a></li>
+                        <li><a href="#">Materiais Educativos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Sobre o Blog</h3>
+                    <p>O blog "Mulheres Sem Medo" tem como objetivo informar, conscientizar e apoiar mulheres em situação de violência, além de mobilizar toda a sociedade para a construção de relações mais igualitárias.</p>
+                    <div class="social-icons">
+                        <a href="#"><i>fb</i></a>
+                        <a href="#"><i>ig</i></a>
+                        <a href="#"><i>tw</i></a>
+                        <a href="#"><i>yt</i></a>
+                    </div>
+                </div>
+            </div>
+            <p>&copy; 2025 Mulheres Sem Medo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
