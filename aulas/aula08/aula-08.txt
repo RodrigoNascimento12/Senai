@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>Formas de Implementar CSS em uma Página HTML</title>
+</head>
+<body>
+	<h2>3 Formas de Usar CSS em Páginas HTML: Da Simplicidade à Profissionalização</h2>
+	<p>
+                        No desenvolvimento web, a aparência de um site é tão importante quanto seu conteúdo. Através do <b>CSS 	    (Cascading Style Sheets)</b>, é possível transformar páginas simples em experiências visuais agradáveis, 	     modernas e funcionais. O <i>CSS permite controlar cores, fontes, tamanhos, espaçamentos, 	     posicionamentos e diversos outros aspectos estéticos da página.</i> Mas para aplicar esses estilos 	     corretamente, é essencial conhecer as formas disponíveis de implementação.
+	</p>
+	<p>
+	    <b> Existem três maneiras principais de aplicar CSS em uma página HTML: </b> <i>inline, interno e externo.                       </i> Cada uma  possui características específicas e é indicada para diferentes situações, desde alterações                               pontuais até  projetos de maior escala e complexidade. Entender quando e como usar cada uma dessas 	            abordagens  pode facilitar muito a manutenção e o crescimento de um site, além de contribuir para a                                organização e  clareza do código.
+	</p>
+	<p>
+	          <b> Neste conteúdo, </b> você vai aprender como cada forma de uso do CSS funciona na prática, com 	                  explicações simples, exemplos ilustrativos e sugestões de imagens para facilitar a compreensão. Ao 		final, você terá uma visão clara e objetiva sobre qual abordagem utilizar em seus projetos, desde os 		mais simples até os mais profissionais.
+	</p>
+
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRco15bgs8gYpHhf0VYHgCHk9vpTjmIgQe9hQ&s" widht= '300px" />
+</body>
+</html>
