@@ -1,27 +1,99 @@
-.container {
-  color: black;
-  width: 350px;
-  height: auto;
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: #fff;
+}
+
+#banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background: blue;
+  text-align: center;
+  padding: 20px;
   margin: 0 auto;
-  background-color: rgb(97, 99, 95);
-  border-radius: 16px;
-  border: 8px solid black;
-  
+}
+
+.containe .box {
+  max-width: 1240px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* é uma propriedade que aplica uma sombra ao redor de um elemento*/
+}
+#banner .box img {
+  width: 50%;
+  height: auto;
+  border-radius: 12px;
+  margin: 0 auto;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+}
+.box h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #00ffc3;
+}
+
+.box p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  background-color: #101820;
+}
+
+.bloco {
+  width: 45%;
+  min-width: 300px;
+  margin: 20px 0;
+  background-color: #1a1a2e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.bloco h2 {
+  border-bottom: 2px solid #00ffc3;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  color: #00ffc3;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 8px 0;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #00ffc3;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
   }
-  h2{
-    background-color: blue;
-    max-width: 350px;
-    height: 30px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-    font-size: 30px;
-    border: 8px solid black;
+
+  .bloco {
+    width: 90%;
   }
-  a{
-    color: #fff;
-    font-size: 20px;
-  }
-  ul{
-    list-style: square;
-  }
+}
